@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            transition: color 1s ease;
+        }
+
+        .nav-item.active .nav-link,
+        .nav-link:focus {
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: beige;
+        }
+
+        .home-sec {
+            margin-top: 20px;
+            width: auto;
+            height: auto;
+            background-image: url(images/plant.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 50px;
+        }
+
+        .home-sec1 {
+            width: 50%;
+            height: 25%;
+            background-color: rgb(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .home-sec3 {
+            margin-top: 50px;
+        }
+
+        .home-sec1 p {
+            font-size: 35px;
+        }
+
+        .about-sec1,
+        .about-sec2 {
+            margin: 20px 40px 10px;
+        }
+
+        .about-p {
+            font-size: 36px;
+            text-align: justify;
+        }
+
+        .ul-about {
+            font-size: 30px;
+            text-align: justify;
+            margin: 10px;
+        }
+
+        .signup-sec {
+            margin-top: 40px;
+            background-image: url(images/pencil.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 60%;
+            height: auto;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .signup-sec1 {
+            font-size: 36px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .signup-sec2 {
+            color: white;
+            margin: 20px;
+            font-size: 30px;
+            text-align: justify;
+            font-weight: 600;
+        }
+
+        .signup-btn {
+            background-color: #22a1cf;
+            border: none;
+            font-size: 25px;
+        }
+
+        .cbody1 {
+            text-decoration: none;
+            border: none;
+
+        }
+
+        .cbody2 {
+            text-decoration: none;
+            border: none;
+        }
+
+        .card-text1 {
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .ct {
+            font-size: 23px;
+            text-align: justify;
+        }
+
+        .c-t {
+            font-weight: bold;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .ch {
+            height: 100%;
+        }
+
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                text-align: center;
+            }
+
+            .navbar-collapse {
+                text-align: center;
+            }
+
+            .home-sec {
+                height: auto;
+            }
+
+            .home-sec1 {
+                width: auto;
+                height: auto;
+            }
+
+            .home-sec1 p {
+                font-size: 24px;
+            }
+
+            .card-title.c-t,
+            .card-text.ct {
+                font-size: 20px;
+            }
+
+            .about-sec1,
+            .about-sec2 {
+                margin: 20px;
+            }
+
+            .about-p {
+                font-size: 24px;
+            }
+
+            .ul-about {
+                font-size: 20px;
+            }
+
+            .signup-sec {
+                width: 80%;
+            }
+
+            .signup-sec1 {
+                font-size: 24px;
+            }
+
+            .signup-sec2 {
+                font-size: 18px;
+                text-align: justify;
+            }
+
+            .signup-btn {
+                font-size: 18px;
+            }
+
+            .card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .col-c {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #22a1cf;">
+        <div class="container-fluid">
+
+            <div class="navbar-brand"><a href="http://localhost:4200/#m-section"><img src="images/it2.png"
+                        alt="Your Image Alt Text" width="100px" height="100%"></a>
+                <div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ICT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="olict.html">O/L ICT</a></li>
+                            <li><a class="dropdown-item" href="alict.html">A/L ICT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Username
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">LogOut</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="home-sec">
+
+        <div class="row">
+            <div class="home-sec1" style="margin-bottom: 20px;">
+                <p>Welcome <b>Jone Smith</b></p>
+                <p style="font-size: 28px;">Unlock Your Potential in IT Education</p>
+            </div>
+
+            <div class="col-md-6">
+                <div class="home-sec2">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Your Progress</h4>
+                                    <div class="progress m-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                    </div>
+                                    <h4>Active Users</h4>
+                                    <p class="ct" style="text-align: center;">21</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="home-sec3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-c">
+                        <div class="card ch">
+                            <div class="card-body">
+                                <h5 class="card-title c-t">Empower Your Learning Journey</h5>
+                                <p class="card-text ct"> believe in the trans-formative power of education
+                                    and technology, and we're
+                                    thrilled to be your partner in
+                                    this exciting journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-c">
+                        <div class="card ch">
+                            <div class="card-body">
+                                <h5 class="card-title c-t">Interactive Learning for O/L and
+                                    A/L Students</h5>
+                                <p class="card-text ct">Explore interactive lessons,
+                                    quizzes, and resources
+                                    tailored to your syllabus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-c">
+                        <div class="card ch">
+                            <div class="card-body">
+                                <h5 class="card-title c-t">Comprehensive Curriculum
+                                    Coverage</h5>
+                                <p class="card-text ct">Our curriculum covers a
+                                    wide range of IT subjects,
+                                    ensuring you have the tools
+                                    you need to succeed in
+                                    your exams.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about-us">
+        <div class="about-sec1">
+            <h1>Join a Supportive Learning Community</h1>
+            <p class="about-p">Connect with fellow students, share insights, and collaborate on projects. Learning
+                is
+                not
+                just
+                an individual journey; it's about building a community of like-minded individuals passionate
+                about IT education.</p>
+        </div>
+
+        <div class="about-sec2">
+            <p class="about-p">Why Choose E Learning?</p>
+            <ul class="ul-about">
+                <li>Expert Guidance: Benefit from expertly crafted lessons by experienced IT educators.</li>
+                <li>Interactive Learning: Engage with our interactive platform for a hands-on learning
+                    experience.</li>
+                <li>Progress Tracking: Monitor your progress and identify areas for improvement.</li>
+                <li>Accessible Anywhere: Learn at your own pace, anytime, anywhere.</li>
+            </ul>
+        </div>
+    </div>
+    <center>
+        <div class="signup-sec">
+            <p class="signup-sec1">Get Started Today!</p>
+            <p class="signup-sec2">Embark on your journey to IT excellence. Sign up now to access a
+                world of knowledge, interactive learning, and a supportive
+                community. Let's shape the future of IT education together.</p>
+            <!--<button class="btn btn-primary signup-btn">SignUp</button>-->
+            <div class="container mt-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <a href="olict.html" class="card cbody1">
+                            <img src="images/learning3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title" style="font-weight: bold;">G.C.E Ordinary Level</h4>
+                                <p class="card-text1">ICT</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-5">
+                        <a href="alict.html" class="card cbody2">
+                            <img src="images/learning2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title" style="font-weight: bold;">G.C.E Advanced Level</h4>
+                                <p class="card-text1">ICT</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <br>
+    <br>
+
+    <footer class="text-light text-center py-4" style="background-color: #22a1cf;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/it2.png" class="mb-3">
+                    <p style="font-size: 18px;">Empower Your ICT Knowledge with US</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a style="text-decoration: none; color: white;" href="#">Home</a></li>
+                        <li><a style="text-decoration: none; color: white;" href="#">About Us</a></li>
+                        <li><a style="text-decoration: none; color: white;" href="#">O/L ICT</a></li>
+                        <li><a style="text-decoration: none; color: white;" href="#">A/L ICT</a></li>
+                        <li><a style="text-decoration: none; color: white;" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p>Address: No 1/2A ICT HUB, ICT HUB Road</p>
+                    <p>Email: info@icthub.com</p>
+                    <p>Phone: +123 456 789</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
