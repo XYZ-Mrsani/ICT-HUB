@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/L ICT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/49556164ac.js" crossorigin="anonymous"></script>
+
+    <style>
+        .nav-link {
+            text-decoration: none;
+            color: black;
+            transition: color 1s ease;
+        }
+
+        .nav-item.active .nav-link,
+        .nav-link:focus {
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: beige;
+        }
+
+        .welcome {
+            margin: 20px;
+            padding: 15px;
+            background-color: #F3F3F3;
+            width: auto;
+            height: auto;
+            font-size: 26px;
+        }
+
+        .ic {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .lec-content {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        .lec-p {
+            font-size: 26px;
+        }
+
+        .in-lec {
+            margin-left: 20px;
+        }
+
+        .in-lec p,
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .in-lec a:hover {
+            font-weight: bold;
+        }
+
+        .ct {
+            font-size: 26px;
+        }
+
+        .ch {
+            background-image: url(images/cardback.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .welcome {
+                font-size: 20px;
+            }
+
+            .pay-p {
+                font-size: 18px;
+            }
+
+            .ic {
+                margin-left: 0px;
+                margin-bottom: 5px;
+            }
+
+            .lec-p {
+                font-size: 20px;
+            }
+
+            .in-lec p,
+            a {
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #22a1cf;">
+        <div class="container-fluid">
+
+            <div class="navbar-brand"><a href="http://localhost:4200/#m-section"><img src="images/it2.png"
+                        alt="Your Image Alt Text" width="100px" height="100%"></a>
+                <div>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ICT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="olict.html">O/L ICT</a></li>
+                            <li><a class="dropdown-item" href="alict.html">A/L ICT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Username
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">LogOut</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="welcome">
+            <p>Welcome to the A/L Information communication technology </p>
+        </div>
+        <div class="welcome">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <p><b>Unlock Full Access and More!</b></p>
+                <div class="row align-items-center">
+                    <div class="col-md-1">
+                        <i class="far fa-credit-card fa-2x ic"></i>
+                    </div>
+                    <div class="col-md-10">
+                        <p class="pay-p" style="text-align: justify;">Upgrade your learning experience by subscribing to
+                            our
+                            premium plan. Gain access to exclusive
+                            content, advanced features, and personalized support.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="lec-content">
+            <p class="lec-p">Lec 1</p>
+            <div class="in-lec">
+                <p><a href="#">Introduction to ICT</a></p>
+                <p hidden><a href="#">Introduction to ICT premium</a> <i class="fa-solid fa-open"></i></p>
+                <p><a href="#">Introduction to ICT - Video</a></p>
+                <p><a href="#">Introduction to ICT - Video</a></p>
+                <p hidden><a href="#">Introduction to ICT premium</a> <i class="fa-solid fa-lock-open"></i></p>
+            </div>
+        </div>
+
+        <div class="lec-content">
+            <p class="lec-p">Lec 2</p>
+            <div class="in-lec">
+                <p><a href="#">Global ICT</a></p>
+                <p hidden><a href="#">Global ICT premium</a> <i class="fa-solid fa-lock-open"></i></p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Select a Payment Plan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-c">
+                            <a href="#" class="card ch">
+                                <div class="card-body text-center">
+                                    <h5 class="card-text"><b>1 Month Plan</b></h5>
+                                    <p class="card-text ct mt-5">LKR RS <b>380.00</b></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-c">
+                            <a href="#" class="card ch">
+                                <div class="card-body text-center">
+                                    <h5 class="card-text"><b>1 Year Plan</b></h5>
+                                    <p class="card-text ct mt-5">LKR RS <b>4560.00</b> 20% off</p>
+                                    <p class="ct"><b>(LKR RS 3648.00 )<b></p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
